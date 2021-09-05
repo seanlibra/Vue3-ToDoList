@@ -1,0 +1,111 @@
+@import "./themeVariable.scss";
+@mixin bg_color($color) {
+  background-color:$color;
+  [data-theme="theme1"] & {
+    background-color:$background-color-theme1;
+  }
+  [data-theme="theme2"] & {
+    background-color:$background-color-theme2;
+  }
+}
+
+@mixin sec_bg_color($color) {
+  background-color:$color;
+  [data-theme="theme1"] & {
+    background-color:$background-color-theme1-2ndbg;
+  }
+  [data-theme="theme2"] & {
+    background-color:$background-color-theme2-2ndbg;
+  }
+}
+
+@mixin thi_bg_color($color) {
+  background-color:$color;
+  [data-theme="theme1"] & {
+    background-color:$background-color-theme1-3rdbg;
+  }
+  [data-theme="theme2"] & {
+    background-color:$background-color-theme2-3rdbg;
+  }
+}
+
+@mixin font_color($color) {
+  color:$color;
+  [data-theme="theme1"] & {
+    color:$theme1-font-color;
+  }
+  [data-theme="theme2"] & {
+    color:$theme2-font-color;
+  }
+}
+
+@mixin font_hover_color($color) {
+  color:$color;
+  [data-theme="theme1"] & {
+    color:$theme1-font-hover-color;
+  }
+  [data-theme="theme2"] & {
+    color:$theme2-font-hover-color;
+  }
+}
+
+@mixin swicher_hover_font_color($color) {
+  color:$color;
+  [data-theme="theme1"] & {
+    color:$theme1-swicher-hover-color;
+  }
+  [data-theme="theme2"] & {
+    color:$theme2-swicher-hover-color;
+  }
+}
+
+
+@mixin btn_border($value) {
+  border:$value;
+  [data-theme="theme1"] & {
+    border:$theme1-btn-border;
+  }
+  [data-theme="theme2"] & {
+    border:$theme2-btn-border;
+  }
+}
+
+@mixin btn_font_color($color) {
+  color:$color;
+  [data-theme="theme1"] & {
+    color:$theme1-btn-font-color;
+  }
+  [data-theme="theme2"] & {
+    color:$theme2-btn-font-color;
+  }
+}
+
+@mixin btn_hover_font_color($color) {
+  color:$color;
+  [data-theme="theme1"] & {
+    color:$theme1-btn-hover-font-color;
+  }
+  [data-theme="theme2"] & {
+    color:$theme2-btn-hover-font-color;
+  }
+}
+
+@mixin btn_hover_bg($color) {
+  background-color:$color;
+  [data-theme="theme1"] & {
+    background-color:$theme1-btn-hover-bg;
+  }
+  [data-theme="theme2"] & {
+    background-color:$theme2-btn-hover-bg;
+  }
+}
+
+@mixin block_line_color($value) {
+  border-bottom:$value;
+  [data-theme="theme1"] & {
+    border-bottom:$theme1-block-line;
+  }
+  [data-theme="theme2"] & {
+    border-bottom:$theme2-block-line;
+  }
+}
